@@ -25,6 +25,7 @@ class UserService {
     // i : 대소문자 구분 안함
     // 참고) m : 여러줄 검색
     // ^ : 시작
+    // $ : 끝
     const idcheck = /^[0-9a-z]{3,}$/gi;
 
     try {

@@ -15,7 +15,7 @@ class UserRepository {
     return signupUserData;
   };
 
-  // 로그인 함수 정의
+  // 로그인 매서드 정의
   loginUser = async (nickname, refreshToken) => {
     // Users 테이블에서 nickname 필드로 찾아서,
     // 리프레시 토큰을 업데이트한다.

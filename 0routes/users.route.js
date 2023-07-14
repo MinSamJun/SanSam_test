@@ -13,7 +13,7 @@ const UsersController = require("../1controllers/users.controller.js");
 // 그걸 다시 클래스 선언
 const usersController = new UsersController();
 
-// 모듈안의 함수들을 각각의 api 경로로 보낸다.
+// 모듈안의 매서드들을 각각의 api 경로로 보낸다.
 router.post("/signup", usersController.signupUser);
 router.post("/login", usersController.loginUser);
 

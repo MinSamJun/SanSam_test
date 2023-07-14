@@ -1,4 +1,5 @@
-require('dotenv').config();
+// dotenv를 사용하여 민감한 키값들을 관리한다.
+require("dotenv").config();
 const env = process.env;
 
 const development = {
@@ -6,21 +7,21 @@ const development = {
   password: env.awsec2password,
   database: env.awsec2database,
   host: env.awsec2host,
-  dialect: 'mysql',
+  dialect: "mysql",
 };
 const test = {
   username: env.awsec2username,
   password: null,
-  database: 'database_test',
-  host: '127.0.0.1',
-  dialect: 'mysql',
+  database: "database_test",
+  host: "127.0.0.1",
+  dialect: "mysql",
 };
 const production = {
   username: env.awsec2username,
   password: null,
-  database: 'database_production',
-  host: '127.0.0.1',
-  dialect: 'mysql',
+  database: "database_production",
+  host: "127.0.0.1",
+  dialect: "mysql",
 };
 
 module.exports = { development, test, production };
